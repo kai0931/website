@@ -81,8 +81,9 @@ nav{
 .container{
     max-width: 1200px;
     margin: auto;
-    padding: 5rem 2rem;
+    padding: 5rem 1rem;
 }
+
 
 .blur{
     position: absolute;
@@ -223,7 +224,7 @@ section .header{
 .pricing{
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
 }
 
@@ -281,6 +282,71 @@ section .header{
 }
 
 .pricing .card button:hover{
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+.lising{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.lising .card{
+    padding: 3rem 2rem;
+    background-color: #27272a;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.lising .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.lising .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.lising .card h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.lising .card h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.lising .card p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.lising .card p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.lising .card button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.lising .card button:hover{
     background-color: #1e40af;
     border-color: #1e40af;
 }
@@ -364,6 +430,9 @@ footer .column > a:hover{
         grid-template-columns: repeat(2, 1fr);
     }
     .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .lising{
         grid-template-columns: repeat(2, 1fr);
     }
     footer{
@@ -382,6 +451,10 @@ footer .column > a:hover{
 
     .pricing{
         grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .listing{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     footer{
