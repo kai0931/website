@@ -1,0 +1,19 @@
+Nếu có github code
+- Create repository
+- Clone repository from Github
+- Download code from Github (.zip)
+- Copy paste all file except .git & readme.txt
+
+If start from scratch
+- Create repository
+- Clone repository from Github
+- cd (tên thư mục)
+- code .
+- Code inside the folder 
+
+
+Push to Git
+- Open Terminal (Ctrl + `)
+- Git add .
+- Git commit -m "abc"
+- Git push
